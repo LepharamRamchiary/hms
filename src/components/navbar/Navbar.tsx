@@ -32,8 +32,9 @@ export const Navbar = () => {
           </p>
         </div>
         <nav className="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur text-slate-800 text-sm">
-          <a href="/">
+          <a href="/" className="flex gap-1 items-center">
             <img src={Logo} alt="logo" className="h-10 w-10" />
+            <p className="text-black text-lg font-extrabold hover:text-black/90">HMS</p>
           </a>
 
           <div className="hidden md:flex items-center gap-8 transition duration-500">
