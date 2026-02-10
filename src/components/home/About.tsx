@@ -8,7 +8,7 @@ export function About() {
                     font-family: 'Poppins', sans-serif;
                 }
             `}</style>
-      <div className="flex max-w-sm mx-auto mt-10 my-4 flex-wrap items-center justify-center p-1 rounded-full bg-white border border-gray-300 text-sm">
+      <div className="flex max-w-[300px] mx-auto mt-10 my-4 flex-wrap items-center justify-center p-1 rounded-full bg-white border border-gray-300 text-sm">
         <div className="flex items-center">
           <img
             className="w-7.5 rounded-full border-3 border-white"
