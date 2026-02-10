@@ -1,9 +1,11 @@
-import { Navbar } from "../components/navbar/navbar";
+import { Navbar } from "../components/navbar/Navbar";
+import { About } from "../components/home/About";
 
 function Leanding() {
   return (
     <div>
       <Navbar />
+      <About />
     </div>
   );
 }
