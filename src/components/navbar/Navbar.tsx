@@ -1,9 +1,11 @@
 import { useState } from "react";
 import Logo from "../../assets/hms-logo1.png";
 import Dashboard from "../../assets/hms-1.png";
+import { useNavigate } from "react-router";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   const openMenuHandler = () => {
     setOpen(true);
@@ -11,6 +13,10 @@ export const Navbar = () => {
 
   const closeMenuHandler = () => {
     setOpen(false);
+  };
+
+  const handleLogin = () => {
+    navigate("/login");
   };
 
   return (
@@ -34,7 +40,9 @@ export const Navbar = () => {
         <nav className="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur text-slate-800 text-sm">
           <a href="/" className="flex gap-1 items-center">
             <img src={Logo} alt="logo" className="h-10 w-10" />
-            <p className="text-black text-lg font-extrabold hover:text-black/90">HMS</p>
+            <p className="text-black text-lg font-extrabold hover:text-black/90">
+              HMS
+            </p>
           </a>
 
           <div className="hidden md:flex items-center gap-8 transition duration-500">
@@ -50,10 +58,13 @@ export const Navbar = () => {
           </div>
 
           <div className="hidden md:block space-x-3">
-            <button className="px-6 py-2 bg-indigo-600 hover:bg-indigo-700 transition text-white rounded-md">
+            <button
+              onClick={handleLogin}
+              className="px-6 py-2 bg-indigo-600 hover:bg-indigo-700 transition text-white rounded-md"
+            >
               Get started
             </button>
-            <button className="hover:bg-slate-100 transition px-6 py-2 border border-indigo-600 rounded-md">
+            <button onClick={handleLogin} className="hover:bg-slate-100 transition px-6 py-2 border border-indigo-600 rounded-md">
               Login
             </button>
           </div>

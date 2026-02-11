@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import Leanding from "../pages/Leanding";
+import { Auth } from "../pages/Auth";
 
 const AppRoutes = createBrowserRouter([
   {
@@ -7,8 +8,8 @@ const AppRoutes = createBrowserRouter([
     Component: Leanding,
   },
   {
-    path: "/about",
-    element: <div>About</div>,
+    path: "login",
+    Component: Auth,
   },
   {
     path: "*",
