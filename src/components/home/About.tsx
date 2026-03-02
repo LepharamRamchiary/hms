@@ -8,7 +8,7 @@ export function About() {
                     font-family: 'Poppins', sans-serif;
                 }
             `}</style>
-      <div className="flex max-w-[300px] mx-auto mt-10 my-4 flex-wrap items-center justify-center p-1 rounded-full bg-white border border-gray-300 text-sm">
+      <div className="flex max-w-75 mx-auto mt-10 my-4 flex-wrap items-center justify-center p-1 rounded-full bg-white border border-gray-300 text-sm">
         <div className="flex items-center">
           <img
             className="w-7.5 rounded-full border-3 border-white"
@@ -37,7 +37,7 @@ export function About() {
           with precision, usability, and care.
         </p>
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-0 py-10">
-          <div className="size-[520px] rounded-full absolute blur-[300px] -z-10 bg-[#FBFFE1]"></div>
+          <div className="size-130 rounded-full absolute blur-[300px] -z-10 bg-[#FBFFE1]"></div>
           <img
             className="max-w-sm w-full rounded-xl h-auto"
             src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?q=80&w=830&h=844&auto=format&fit=crop"

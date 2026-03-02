@@ -1,5 +1,4 @@
-import React from "react";
-import Logo from "../../assets/hms-logo1.png";
+import Logo from "../../assets/white logo.png";
 import { Linkedin , Github , Twitter , Instagram, Facebook} from 'lucide-react';
 
 
@@ -11,10 +10,10 @@ export function Footer() {
           <div className="flex gap-1 items-center">
             <img
             alt="logo"
-            className="h-11 text-white"
+            className="h-14 w-14 text-white"
             src={Logo}
           />
-          <p>HMS</p>
+          {/* <p>HMS</p> */}
           </div>
           <p className="mt-6 text-sm">
             Our Hospital Management System has been developed following

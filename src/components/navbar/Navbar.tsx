@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../../assets/hms-logo1.png";
+import Logo from "../../assets/hms_logo.png";
 import Dashboard from "../../assets/hms-1.png";
 import { useNavigate } from "react-router";
 
@@ -29,7 +29,7 @@ export const Navbar = () => {
                 }
             `}</style>
       <section className="flex flex-col items-center text-sm bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/bg-with-grid.png')] bg-cover bg-center bg-no-repeat">
-        <div className="w-full py-2.5 font-medium text-sm text-white text-center bg-gradient-to-r from-[#4F39F6] to-[#FDFEFF]">
+        <div className="w-full py-2.5 font-medium text-sm text-white text-center bg-linear-to-r from-[#4F39F6] to-[#FDFEFF]">
           <p>
             <span className="px-3 py-1 rounded-md text-indigo-600 bg-white mr-2">
               Hello Dear
@@ -39,10 +39,10 @@ export const Navbar = () => {
         </div>
         <nav className="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur text-slate-800 text-sm">
           <a href="/" className="flex gap-1 items-center">
-            <img src={Logo} alt="logo" className="h-10 w-10" />
-            <p className="text-black text-lg font-extrabold hover:text-black/90">
+            <img src={Logo} alt="logo" className="h-14 w-14" />
+            {/* <p className="text-black text-lg font-extrabold hover:text-black/90">
               HMS
-            </p>
+            </p> */}
           </a>
 
           <div className="hidden md:flex items-center gap-8 transition duration-500">
@@ -91,7 +91,7 @@ export const Navbar = () => {
           </button>
         </nav>
         <div
-          className={`fixed inset-0 z-[100] bg-white/60 text-slate-800 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 ${
+          className={`fixed inset-0 z-100 bg-white/60 text-slate-800 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 ${
             open ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -149,7 +149,7 @@ export const Navbar = () => {
             </p>
           </a>
 
-          <h1 className="text-center text-5xl leading-[68px] md:text-6xl md:leading-[80px] font-semibold max-w-4xl text-slate-900">
+          <h1 className="text-center text-5xl leading-17 md:text-6xl md:leading-20 font-semibold max-w-4xl text-slate-900">
             The fastest way to book token.
           </h1>
           <p className="text-center text-base text-slate-700 max-w-lg mt-2">
