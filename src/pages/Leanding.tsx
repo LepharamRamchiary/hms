@@ -9,7 +9,7 @@ function Leanding() {
     <div>
       <Navbar />
       <ProblemSolution />
-      {/* <About /> */}
+      <About />
       {/* <Stories />
       <Footer /> */}
     </div>
