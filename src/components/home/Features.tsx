@@ -261,7 +261,7 @@ export function Features() {
         }
       `}</style>
 
-      <section className="feat-section py-20 sm:py-28">
+      <section className="feat-section py-2 sm:py-4">
 
         {/* blobs — same as hero */}
         <div className="feat-blob" style={{

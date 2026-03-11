@@ -4,6 +4,7 @@ import { Stories } from "../components/home/Stories";
 import { Footer } from "../components/footer/Footer";
 import { ProblemSolution } from "../components/home/ProblemSolution";
 import { Features } from "../components/home/Features";
+import { Testimonials } from "../components/home/Testimonials";
 
 function Leanding() {
   return (
@@ -12,6 +13,7 @@ function Leanding() {
       <ProblemSolution />
       <About />
       <Features />
+      <Testimonials />
       {/* <Stories />
       <Footer /> */}
     </div>

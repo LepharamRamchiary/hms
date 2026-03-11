@@ -148,7 +148,7 @@ export function About() {
         }
       `}</style>
 
-      <section className="about-section py-20 sm:py-28">
+      <section className="about-section py-2 sm:py-4">
 
         {/* blobs — same as hero */}
         <div className="about-blob" style={{

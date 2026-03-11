@@ -222,7 +222,7 @@ export const ProblemSolution = () => {
         }
       `}</style>
 
-      <section className="ps-section py-20 sm:py-28">
+      <section className="ps-section py-2 sm:py-4">
 
         {/* exact same blobs as hero */}
         <div
