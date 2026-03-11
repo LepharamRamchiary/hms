@@ -1,4 +1,3 @@
-// Navbar.jsx - Responsive version
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import Logo from "../../assets/hms_logo.png";
@@ -199,7 +198,7 @@ export const Navbar = () => {
 
       {/* MOBILE MENU */}
       <div
-        className={`mobile-menu fixed inset-0 z-[100] flex flex-col bg-white/95 backdrop-blur-xl px-6 py-8 gap-6 md:hidden ${open ? "open" : "closed pointer-events-none"}`}
+        className={`mobile-menu fixed inset-0 z-100 flex flex-col bg-white/95 backdrop-blur-xl px-6 py-8 gap-6 md:hidden ${open ? "open" : "closed pointer-events-none"}`}
       >
         <div className="flex justify-between items-center">
           <span

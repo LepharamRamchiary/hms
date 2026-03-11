@@ -171,9 +171,7 @@ export function About() {
               <span className="about-badge-dot" />
               About Our Platform
             </div>
-
-            {/* trust pill */}
-            <div className="about-trust-pill mx-auto w-fit">
+            {/* <div className="about-trust-pill mx-auto w-fit">
               <div className="about-avatar-stack">
                 {[
                   "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=50",
@@ -184,7 +182,7 @@ export function About() {
                 ))}
               </div>
               Trusted by <strong style={{ color: "#2563eb", marginLeft: 4 }}>10,000+</strong>&nbsp;patients
-            </div>
+            </div> */}
 
             <h2
               className="font-bold leading-tight mb-4"
