@@ -1,6 +1,7 @@
 import Logo from "../../assets/white logo.png";
 import { Linkedin , Github , Twitter , Instagram, Facebook} from 'lucide-react';
 
+// from office
 
 export function Footer() {
   return (
