@@ -1,74 +1,95 @@
 import Logo from "../../assets/white logo.png";
-import { Linkedin , Github , Twitter , Instagram, Facebook} from 'lucide-react';
-
-// from office
+import { Linkedin, Github, Twitter, Instagram, Facebook } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="px-6 bg-gray-950 pt-8 md:px-16 lg:px-36 w-full text-gray-300">
-      <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500 pb-10">
-        <div className="md:max-w-96">
-          <div className="flex gap-1 items-center">
-            <img
-            alt="logo"
-            className="h-14 w-14 text-white"
-            src={Logo}
-          />
-          {/* <p>HMS</p> */}
+    <footer className="bg-gray-950 text-gray-300 w-full">
+      {/* Main content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 pt-10 pb-8">
+        {/* Top section */}
+        <div className="flex flex-col sm:flex-row flex-wrap justify-between gap-10 border-b border-gray-700 pb-10">
+
+          {/* Brand block */}
+          <div className="w-full sm:w-auto sm:max-w-xs lg:max-w-sm">
+            <div className="flex items-center gap-2">
+              <img
+                alt="logo"
+                src={Logo}
+                className="h-12 w-12 sm:h-14 sm:w-14 object-contain"
+              />
+            </div>
+            <p className="mt-4 text-sm leading-relaxed text-gray-400">
+              Our Hospital Management System has been developed following
+              industry-standard healthcare practices, ensuring reliable, secure,
+              and efficient hospital operations.
+            </p>
+            {/* App store buttons */}
+            <div className="flex flex-wrap items-center gap-2 mt-5">
+              <img
+                src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/refs/heads/main/assets/appDownload/googlePlayBtnBlack.svg"
+                alt="google play"
+                className="h-9 w-auto border border-gray-600 rounded hover:border-gray-400 transition"
+              />
+              <img
+                src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/refs/heads/main/assets/appDownload/appleStoreBtnBlack.svg"
+                alt="app store"
+                className="h-9 w-auto border border-gray-600 rounded hover:border-gray-400 transition"
+              />
+            </div>
           </div>
-          <p className="mt-6 text-sm">
-            Our Hospital Management System has been developed following
-            industry-standard healthcare practices, ensuring reliable, secure,
-            and efficient hospital operations.
-          </p>
-          <div className="flex items-center gap-2 mt-4">
-            <img
-              src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/refs/heads/main/assets/appDownload/googlePlayBtnBlack.svg"
-              alt="google play"
-              className="h-10 w-auto border border-white rounded"
-            />
-            <img
-              src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/refs/heads/main/assets/appDownload/appleStoreBtnBlack.svg"
-              alt="app store"
-              className="h-10 w-auto border border-white rounded"
-            />
-          </div>
-        </div>
-        <div className="flex-1 flex items-start md:justify-end gap-20 md:gap-40">
-          <div>
-            <h2 className="font-semibold mb-5">Company</h2>
-            <ul className="text-sm space-y-2">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About us</a>
-              </li>
-              <li>
-                <a href="#">Stories</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="font-semibold mb-5">Get in touch</h2>
-            <div className="text-sm space-y-2">
-              <p>+91 91013 18307</p>
-              <p>lepharamchiary@gmail.com</p>
+
+          {/* Links block */}
+          <div className="flex flex-row flex-wrap gap-10 sm:gap-12 lg:gap-20">
+            {/* Company */}
+            <div className="min-w-[100px]">
+              <h2 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider">
+                Company
+              </h2>
+              <ul className="text-sm space-y-3 text-gray-400">
+                <li>
+                  <a href="#" className="hover:text-white transition">Home</a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">About us</a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">Stories</a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Get in touch */}
+            <div className="min-w-[140px]">
+              <h2 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider">
+                Get in touch
+              </h2>
+              <div className="text-sm space-y-3 text-gray-400">
+                <p>+91 91013 18307</p>
+                <p className="break-all">lepharamchiary@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Bottom section */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6">
+          {/* Social icons */}
+          <div className="flex items-center gap-5">
+            <Linkedin size={18} className="hover:text-white transition cursor-pointer" />
+            <Github   size={18} className="hover:text-white transition cursor-pointer" />
+            <Twitter  size={18} className="hover:text-white transition cursor-pointer" />
+            <Instagram size={18} className="hover:text-white transition cursor-pointer" />
+            <Facebook size={18} className="hover:text-white transition cursor-pointer" />
+          </div>
+
+          {/* Copyright */}
+          <p className="text-xs sm:text-sm text-gray-500 text-center sm:text-right">
+            Copyright {new Date().getFullYear()} &copy;{" "}
+            <a href="/" className="hover:text-white transition">HMS</a>.{" "}
+            All Rights Reserved.
+          </p>
+        </div>
       </div>
-      <div className="flex items-center justify-center gap-6 pt-4">
-        <Linkedin className="hover:text-gray-400 transition cursor-pointer"/>
-        <Github className="hover:text-gray-400 transition cursor-pointer"/>
-        <Twitter className="hover:text-gray-400 transition cursor-pointer"/>
-        <Instagram className="hover:text-gray-400 transition cursor-pointer"/>
-        <Facebook className="hover:text-gray-400 transition cursor-pointer"/>
-      </div>
-      <p className="pt-4 text-center text-sm pb-5 flex-wrap">
-        Copyright {new Date().getFullYear()} ©{" "}
-        <a href="/">HMS</a>. All Right Reserved.
-      </p>
     </footer>
   );
 }
