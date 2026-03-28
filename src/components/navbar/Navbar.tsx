@@ -10,11 +10,11 @@ const floatingCards = [
 ];
 
 const navLinks = [
-  { label: "About a PHP", href: "#" },
-  { label: "What a Tee", href: "#" },
-  { label: "All About", href: "#" },
-  { label: "Reviews", href: "#" },
-  { label: "Before & After", href: "#" },
+  { label: "Doctors", href: "#" },
+  { label: "Our Services", href: "#" },
+  { label: "Our Staff", href: "#" },
+  { label: "About Us", href: "#" },
+  { label: "Cantact Us", href: "#" },
 ];
 
 export const Navbar = () => {
