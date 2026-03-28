@@ -4,9 +4,9 @@ import Logo from "../../assets/hms_logo.png";
 import Doctor from "../../assets/new.png";
 
 const floatingCards = [
-  { id: 1, icon: "📞", style: "top-[12%] right-[22%]", delay: "0s" },
-  { id: 2, icon: "🎥", style: "top-[28%] right-[8%]", delay: "0.3s" },
-  { id: 3, icon: "✉️", style: "top-[48%] right-[18%]", delay: "0.6s" },
+  { id: 1, icon: "📞", style: "top-[10%] right-[35%]", delay: "0s"   },
+  { id: 2, icon: "🎥", style: "top-[40%] left-[25%]",  delay: "0.3s" },
+  { id: 3, icon: "✉️", style: "top-[40%] right-[10%]", delay: "0.6s" },
 ];
 
 const navLinks = [
