@@ -335,21 +335,6 @@ export const ProblemSolution = () => {
             </div>
           </div>
 
-          {/* Stat strip */}
-          <div className="ps-stats">
-            {[
-              { num: "4hrs",  label: "Saved per\nPatient Visit" },
-              { num: "100%",  label: "Paperless\nRecords" },
-              { num: "0",     label: "Billing\nMistakes" },
-              { num: "3x",    label: "Faster\nCheck-in" },
-            ].map((s) => (
-              <div key={s.label} className="ps-stat">
-                <span className="ps-stat-num">{s.num}</span>
-                <span className="ps-stat-label" style={{ whiteSpace: "pre-line" }}>{s.label}</span>
-              </div>
-            ))}
-          </div>
-
         </div>
       </section>
     </>
