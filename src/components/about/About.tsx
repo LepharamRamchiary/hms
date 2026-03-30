@@ -32,13 +32,17 @@ const values = [
 
 const team = [
   { name: "Dr. Ananya Sharma", role: "Chief Medical Officer", emoji: "👩‍⚕️" },
-  { name: "Dr. Rahul Verma",   role: "Head of Cardiology",    emoji: "👨‍⚕️" },
-  { name: "Dr. Priya Nair",    role: "Head of Neurology",     emoji: "👩‍⚕️" },
-  { name: "Dr. Amir Khan",     role: "Head of Paediatrics",   emoji: "👨‍⚕️" },
+  { name: "Dr. Rahul Verma", role: "Head of Cardiology", emoji: "👨‍⚕️" },
+  { name: "Dr. Priya Nair", role: "Head of Neurology", emoji: "👩‍⚕️" },
+  { name: "Dr. Amir Khan", role: "Head of Paediatrics", emoji: "👨‍⚕️" },
 ];
 
 const StarIcon = () => (
-  <svg className="w-3 h-3 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+  <svg
+    className="w-3 h-3 text-amber-400"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+  >
     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
   </svg>
 );
@@ -91,36 +95,75 @@ export default function About() {
       `}</style>
 
       <div className="font-sora min-h-screen overflow-x-hidden bg-gradient-to-br from-indigo-50 via-blue-50 to-blue-100 text-slate-800">
-
         {/* ── HERO BANNER ── */}
         <section
           className="relative overflow-hidden flex items-center bg-gradient-to-br from-indigo-50 via-blue-50 to-blue-100"
-          style={{ padding: "clamp(80px,12vw,140px) clamp(20px,6vw,80px) clamp(60px,8vw,100px)", minHeight: "52vh" }}
+          style={{
+            padding:
+              "clamp(80px,12vw,140px) clamp(20px,6vw,80px) clamp(60px,8vw,100px)",
+            minHeight: "52vh",
+          }}
         >
           {/* Blobs */}
           <div
             className="blob absolute"
-            style={{ width: "clamp(200px,50vw,520px)", height: "clamp(200px,50vw,520px)", background: "radial-gradient(circle, rgba(147,197,253,0.35) 0%, rgba(196,181,253,0.15) 100%)", top: "2%", right: "-8%", zIndex: 0 }}
+            style={{
+              width: "clamp(200px,50vw,520px)",
+              height: "clamp(200px,50vw,520px)",
+              background:
+                "radial-gradient(circle, rgba(147,197,253,0.35) 0%, rgba(196,181,253,0.15) 100%)",
+              top: "2%",
+              right: "-8%",
+              zIndex: 0,
+            }}
           />
           <div
             className="blob absolute"
-            style={{ width: "clamp(120px,30vw,320px)", height: "clamp(120px,30vw,320px)", background: "radial-gradient(circle, rgba(167,243,208,0.2) 0%, rgba(147,197,253,0.1) 100%)", bottom: "8%", left: "3%", zIndex: 0, animationDelay: "2s" }}
+            style={{
+              width: "clamp(120px,30vw,320px)",
+              height: "clamp(120px,30vw,320px)",
+              background:
+                "radial-gradient(circle, rgba(167,243,208,0.2) 0%, rgba(147,197,253,0.1) 100%)",
+              bottom: "8%",
+              left: "3%",
+              zIndex: 0,
+              animationDelay: "2s",
+            }}
           />
-          <div className="dot-pattern absolute inset-0 opacity-20" style={{ zIndex: 0 }} />
+          <div
+            className="dot-pattern absolute inset-0 opacity-20"
+            style={{ zIndex: 0 }}
+          />
 
           {/* Decorative watermark */}
           <div
             className="absolute select-none pointer-events-none"
-            style={{ right: "-1%", top: "50%", transform: "translateY(-50%)", fontSize: "clamp(100px,18vw,220px)", fontWeight: 800, color: "transparent", WebkitTextStroke: "1.5px rgba(37,99,235,0.06)", lineHeight: 1, zIndex: 0 }}
+            style={{
+              right: "-1%",
+              top: "50%",
+              transform: "translateY(-50%)",
+              fontSize: "clamp(100px,18vw,220px)",
+              fontWeight: 800,
+              color: "transparent",
+              WebkitTextStroke: "1.5px rgba(37,99,235,0.06)",
+              lineHeight: 1,
+              zIndex: 0,
+            }}
           >
             HMS
           </div>
 
           {/* Hero content */}
-          <div className={`relative z-10 max-w-2xl ${loaded ? "animate-slide-left" : "opacity-0"}`}>
+          <div
+            className={`relative z-10 max-w-2xl ${loaded ? "animate-slide-left" : "opacity-0"}`}
+          >
             <h1
               className="font-bold text-slate-800 mb-5"
-              style={{ fontSize: "clamp(2.2rem,6vw,4.8rem)", letterSpacing: "-0.02em", lineHeight: 1.08 }}
+              style={{
+                fontSize: "clamp(2.2rem,6vw,4.8rem)",
+                letterSpacing: "-0.02em",
+                lineHeight: 1.08,
+              }}
             >
               <span className="block">Your Health,</span>
               <span className="block text-slate-700">Our Story.</span>
@@ -136,13 +179,15 @@ export default function About() {
               className="font-dm text-slate-500 leading-relaxed mb-8"
               style={{ fontSize: "clamp(0.95rem,2vw,1.125rem)", maxWidth: 480 }}
             >
-              For over 15 years, we've been at the forefront of modern medicine —
-              combining compassionate care with cutting-edge technology to serve
-              every patient who walks through our doors.
+              For over 15 years, we've been at the forefront of modern medicine
+              — combining compassionate care with cutting-edge technology to
+              serve every patient who walks through our doors.
             </p>
 
             <div className="flex items-center gap-4 sm:gap-6 flex-wrap">
-              <span className="text-xs text-slate-400 font-medium uppercase tracking-widest">Follow</span>
+              <span className="text-xs text-slate-400 font-medium uppercase tracking-widest">
+                Follow
+              </span>
               {["Facebook", "Instagram", "Twitter"].map((s) => (
                 <a
                   key={s}
@@ -170,11 +215,16 @@ export default function About() {
               >
                 <div
                   className="font-bold text-white"
-                  style={{ fontSize: "clamp(1.8rem,4vw,2.8rem)", letterSpacing: "-0.02em" }}
+                  style={{
+                    fontSize: "clamp(1.8rem,4vw,2.8rem)",
+                    letterSpacing: "-0.02em",
+                  }}
                 >
                   {s.value}
                 </div>
-                <div className="font-dm text-xs font-medium mt-1 tracking-wide text-white/70">{s.label}</div>
+                <div className="font-dm text-xs font-medium mt-1 tracking-wide text-white/70">
+                  {s.label}
+                </div>
               </div>
             ))}
           </div>
@@ -193,7 +243,11 @@ export default function About() {
 
           <h2
             className="font-bold text-slate-800"
-            style={{ fontSize: "clamp(1.8rem,4vw,3rem)", letterSpacing: "-0.02em", lineHeight: 1.1 }}
+            style={{
+              fontSize: "clamp(1.8rem,4vw,3rem)",
+              letterSpacing: "-0.02em",
+              lineHeight: 1.1,
+            }}
           >
             Why we{" "}
             <span className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
@@ -216,18 +270,38 @@ export default function About() {
             >
               <div
                 className="blob absolute"
-                style={{ width: "55%", height: "55%", background: "radial-gradient(circle, rgba(147,197,253,0.5) 0%, rgba(196,181,253,0.2) 100%)", top: "10%", left: "10%" }}
+                style={{
+                  width: "55%",
+                  height: "55%",
+                  background:
+                    "radial-gradient(circle, rgba(147,197,253,0.5) 0%, rgba(196,181,253,0.2) 100%)",
+                  top: "10%",
+                  left: "10%",
+                }}
               />
               <div
                 className="blob absolute"
-                style={{ width: "40%", height: "40%", background: "radial-gradient(circle, rgba(196,181,253,0.4) 0%, transparent 70%)", bottom: "10%", right: "10%", animationDelay: "2s" }}
+                style={{
+                  width: "40%",
+                  height: "40%",
+                  background:
+                    "radial-gradient(circle, rgba(196,181,253,0.4) 0%, transparent 70%)",
+                  bottom: "10%",
+                  right: "10%",
+                  animationDelay: "2s",
+                }}
               />
-              <span
+              {/* <span
                 className="relative z-10 select-none font-bold leading-none"
                 style={{ fontSize: "clamp(80px,14vw,140px)", color: "rgba(37,99,235,0.12)" }}
               >
                 ♥
-              </span>
+              </span> */}
+              <img
+                src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=500&auto=format&fit=crop&q=60"
+                alt="image"
+                className="absolute inset-0 w-full h-full object-cover rounded-3xl"
+              />
 
               {/* Est. badge */}
               <div
@@ -235,37 +309,47 @@ export default function About() {
                 style={{ boxShadow: "0 12px 40px rgba(37,99,235,0.15)" }}
               >
                 <span className="text-xl font-bold text-slate-800">Est.</span>
-                <span className="font-dm text-xs text-slate-500 font-medium">2009</span>
+                <span className="font-dm text-xs text-slate-500 font-medium">
+                  2009
+                </span>
                 <div className="flex gap-0.5 mt-1">
-                  {[...Array(5)].map((_, j) => <StarIcon key={j} />)}
+                  {[...Array(5)].map((_, j) => (
+                    <StarIcon key={j} />
+                  ))}
                 </div>
               </div>
             </div>
 
             {/* Text */}
-            <div className="flex flex-col gap-4 animate-slide-up" style={{ animationDelay: "0.2s" }}>
+            <div
+              className="flex flex-col gap-4 animate-slide-up"
+              style={{ animationDelay: "0.2s" }}
+            >
               <p
                 className="font-dm text-slate-500 leading-[1.8]"
                 style={{ fontSize: "clamp(0.95rem,1.6vw,1.05rem)" }}
               >
-                We founded this hospital with a single belief: that every person, regardless of background,
-                deserves access to world-class medical care. That belief hasn't changed — it's the foundation
+                We founded this hospital with a single belief: that every
+                person, regardless of background, deserves access to world-class
+                medical care. That belief hasn't changed — it's the foundation
                 of everything we do.
               </p>
               <p
                 className="font-dm text-slate-500 leading-[1.8]"
                 style={{ fontSize: "clamp(0.95rem,1.6vw,1.05rem)" }}
               >
-                Our Hospital Management System was built to eliminate the friction between patients and the
-                care they need — reducing wait times, streamlining communication, and putting the right
+                Our Hospital Management System was built to eliminate the
+                friction between patients and the care they need — reducing wait
+                times, streamlining communication, and putting the right
                 information in the right hands at the right moment.
               </p>
               <blockquote
                 className="mt-2 pl-5 text-slate-700 italic border-l-[3px] border-blue-600 leading-[1.65]"
                 style={{ fontSize: "clamp(1rem,1.8vw,1.18rem)" }}
               >
-                "Medicine is not just science — it's the art of understanding another person's pain and
-                responding with skill, speed, and humanity."
+                "Medicine is not just science — it's the art of understanding
+                another person's pain and responding with skill, speed, and
+                humanity."
               </blockquote>
             </div>
           </div>
@@ -284,7 +368,11 @@ export default function About() {
 
             <h2
               className="font-bold text-slate-800 mb-10"
-              style={{ fontSize: "clamp(1.8rem,4vw,3rem)", letterSpacing: "-0.02em", lineHeight: 1.1 }}
+              style={{
+                fontSize: "clamp(1.8rem,4vw,3rem)",
+                letterSpacing: "-0.02em",
+                lineHeight: 1.1,
+              }}
             >
               What we stand{" "}
               <span className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
@@ -305,8 +393,12 @@ export default function About() {
                   <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl mb-4 bg-gradient-to-br from-blue-100 to-violet-100">
                     {v.icon}
                   </div>
-                  <div className="font-semibold text-slate-800 text-sm mb-2">{v.title}</div>
-                  <p className="font-dm text-xs leading-relaxed text-slate-500">{v.desc}</p>
+                  <div className="font-semibold text-slate-800 text-sm mb-2">
+                    {v.title}
+                  </div>
+                  <p className="font-dm text-xs leading-relaxed text-slate-500">
+                    {v.desc}
+                  </p>
                 </div>
               ))}
             </div>
@@ -325,7 +417,11 @@ export default function About() {
 
           <h2
             className="font-bold text-slate-800 mb-10"
-            style={{ fontSize: "clamp(1.8rem,4vw,3rem)", letterSpacing: "-0.02em", lineHeight: 1.1 }}
+            style={{
+              fontSize: "clamp(1.8rem,4vw,3rem)",
+              letterSpacing: "-0.02em",
+              lineHeight: 1.1,
+            }}
           >
             Meet the{" "}
             <span className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
@@ -346,10 +442,16 @@ export default function About() {
                 <div className="w-16 h-16 rounded-full flex items-center justify-center text-3xl mx-auto mb-4 bg-gradient-to-br from-blue-100 to-violet-100">
                   {member.emoji}
                 </div>
-                <div className="font-bold text-slate-800 text-xs mb-1">{member.name}</div>
-                <div className="font-dm text-xs font-medium text-blue-600 mb-2">{member.role}</div>
+                <div className="font-bold text-slate-800 text-xs mb-1">
+                  {member.name}
+                </div>
+                <div className="font-dm text-xs font-medium text-blue-600 mb-2">
+                  {member.role}
+                </div>
                 <div className="flex gap-0.5 justify-center">
-                  {[...Array(5)].map((_, j) => <StarIcon key={j} />)}
+                  {[...Array(5)].map((_, j) => (
+                    <StarIcon key={j} />
+                  ))}
                 </div>
               </div>
             ))}
@@ -366,7 +468,10 @@ export default function About() {
         >
           <h2
             className="font-bold text-white mb-3"
-            style={{ fontSize: "clamp(1.6rem,3.5vw,2.8rem)", letterSpacing: "-0.02em" }}
+            style={{
+              fontSize: "clamp(1.6rem,3.5vw,2.8rem)",
+              letterSpacing: "-0.02em",
+            }}
           >
             Ready to experience better care?
           </h2>
@@ -381,8 +486,12 @@ export default function About() {
             href="/login"
             className="inline-flex items-center gap-2 bg-white font-semibold text-sm px-7 py-3.5 rounded-full text-blue-600 transition-all duration-300 hover:-translate-y-0.5"
             style={{ boxShadow: "0 8px 24px rgba(0,0,0,0.15)" }}
-            onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 12px 32px rgba(0,0,0,0.2)"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.15)"; }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow = "0 12px 32px rgba(0,0,0,0.2)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.15)";
+            }}
           >
             <span className="w-5 h-5 rounded-full flex items-center justify-center text-xs text-white bg-gradient-to-br from-blue-600 to-blue-700">
               +
@@ -390,7 +499,6 @@ export default function About() {
             Book Appointment
           </a>
         </section>
-
       </div>
     </>
   );
