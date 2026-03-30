@@ -4,7 +4,7 @@ import Logo from "../../assets/hms_logo.png";
 
 const navLinks = [
   { label: "Doctors", href: "/doctors" },
-  { label: "Our Services", href: "#" },
+  { label: "Our Services", href: "/services" },
   { label: "Our Staff", href: "#" },
   { label: "About Us", href: "/about" },
   { label: "Cantact Us", href: "#" },

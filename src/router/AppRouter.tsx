@@ -4,6 +4,7 @@ import Leanding from "../pages/Leanding";
 import { Auth } from "../pages/Auth";
 import About from "../components/about/About";
 import Doctors from "../components/doctors/Doctors";
+import Services from "../components/service/Services";
 
 const AppRoutes = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const AppRoutes = createBrowserRouter([
       {
         path: "doctors",
         Component: Doctors,
+      },
+      {
+        path: "services",
+        Component: Services,
       },
       {
         path: "*",
