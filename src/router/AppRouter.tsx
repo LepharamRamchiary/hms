@@ -5,6 +5,7 @@ import { Auth } from "../pages/Auth";
 import About from "../components/about/About";
 import Doctors from "../components/doctors/Doctors";
 import Services from "../components/service/Services";
+import CantactUs from "../components/cantact/Contactus";
 
 const AppRoutes = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const AppRoutes = createBrowserRouter([
       {
         path: "services",
         Component: Services,
+      },
+      {
+        path: "cantactus",
+        Component: CantactUs,
       },
       {
         path: "*",
