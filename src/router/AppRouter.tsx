@@ -5,7 +5,8 @@ import { Auth } from "../pages/Auth";
 import About from "../components/about/About";
 import Doctors from "../components/doctors/Doctors";
 import Services from "../components/service/Services";
-import CantactUs from "../components/cantact/Contactus";
+import CantactUs from "../components/cantact/ContactUs";
+import { NotFound } from "../components/notfound/NotFound";
 
 const AppRoutes = createBrowserRouter([
   {
@@ -33,7 +34,7 @@ const AppRoutes = createBrowserRouter([
       },
       {
         path: "*",
-        element: <div>Not Found</div>,
+        element: <NotFound />,
       },
     ],
   },
