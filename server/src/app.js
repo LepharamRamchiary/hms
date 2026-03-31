@@ -12,13 +12,11 @@ app.use(cors());
 //json data
 app.use(express.json());
 
-app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
-
 // routes import
-
+import userRouter from "./routers/user.route.js";
 
 // routes declaration
-
+app.use("/api/v1/user", userRouter);
 
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;
@@ -27,7 +25,7 @@ app.use((err, req, res, next) => {
   return res.status(statusCode).json({
     success: false,
     statusCode,
-    message,   
+    message,
     errors: err.errors || [],
   });
 });
